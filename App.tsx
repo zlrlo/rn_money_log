@@ -9,11 +9,12 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 import tw from 'twrnc';
+import {FeatureGroupDetail} from './lib/feature-group-detail';
 
 const App = () => {
   return (
-    <View style={tw` mt-12 bg-blue-300 flex-1 items-center justify-center`}>
-      <Text>MONEY LOG</Text>
+    <View style={tw` pt-12 bg-gray-50 flex-1 items-center justify-center`}>
+      <FeatureGroupDetail />
     </View>
   );
 };
