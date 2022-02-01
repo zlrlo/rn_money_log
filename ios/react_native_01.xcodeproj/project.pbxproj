@@ -14,6 +14,8 @@
 		501800682126714CCC9185D7 /* libPods-react_native_01-react_native_01Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E915AF4FB313F2F51F9C6A /* libPods-react_native_01-react_native_01Tests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		DFABE188AE5881B4C9C41554 /* libPods-react_native_01.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 836322963ACF303E076E6C9D /* libPods-react_native_01.a */; };
+		F5165DC127A91A24007E8DAB /* OpenSSL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5165DC027A91A24007E8DAB /* OpenSSL.xcframework */; };
+		F5165DC327A91D53007E8DAB /* double-conversion.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5165DC227A91D53007E8DAB /* double-conversion.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,9 @@
 		CFAE141E2E50A25F78ABB8DA /* Pods-react_native_01-react_native_01Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_01-react_native_01Tests.release.xcconfig"; path = "Target Support Files/Pods-react_native_01-react_native_01Tests/Pods-react_native_01-react_native_01Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E7D167CF3D7F8C5831D8D8CD /* Pods-react_native_01-react_native_01Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-react_native_01-react_native_01Tests.debug.xcconfig"; path = "Target Support Files/Pods-react_native_01-react_native_01Tests/Pods-react_native_01-react_native_01Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F5165DBE27A90D24007E8DAB /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		F5165DC027A91A24007E8DAB /* OpenSSL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpenSSL.xcframework; path = "Pods/OpenSSL-Universal/Frameworks/OpenSSL.xcframework"; sourceTree = "<group>"; };
+		F5165DC227A91D53007E8DAB /* double-conversion.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "double-conversion.xcframework"; path = "Pods/Flipper-DoubleConversion/Frameworks/double-conversion.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5165DC327A91D53007E8DAB /* double-conversion.xcframework in Frameworks */,
+				F5165DC127A91A24007E8DAB /* OpenSSL.xcframework in Frameworks */,
 				DFABE188AE5881B4C9C41554 /* libPods-react_native_01.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +93,7 @@
 		13B07FAE1A68108700A75B9A /* react_native_01 */ = {
 			isa = PBXGroup;
 			children = (
+				F5165DBD27A90C80007E8DAB /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -104,13 +112,14 @@
 				E7D167CF3D7F8C5831D8D8CD /* Pods-react_native_01-react_native_01Tests.debug.xcconfig */,
 				CFAE141E2E50A25F78ABB8DA /* Pods-react_native_01-react_native_01Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5165DC227A91D53007E8DAB /* double-conversion.xcframework */,
+				F5165DC027A91A24007E8DAB /* OpenSSL.xcframework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				836322963ACF303E076E6C9D /* libPods-react_native_01.a */,
 				92E915AF4FB313F2F51F9C6A /* libPods-react_native_01-react_native_01Tests.a */,
@@ -147,6 +156,14 @@
 				00E356EE1AD99517003FC87E /* react_native_01Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F5165DBD27A90C80007E8DAB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F5165DBE27A90D24007E8DAB /* Ionicons.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +270,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputPaths = (
@@ -261,7 +278,7 @@
 			name = "Bundle React Native code and images";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
@@ -323,7 +340,7 @@
 		};
 		B7C76AA7C756C969D9985F66 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			files = (
 			);
 			inputFileListPaths = (
@@ -333,10 +350,9 @@
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-react_native_01/Pods-react_native_01-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-react_native_01/Pods-react_native_01-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		DA044C48BD9CD569420FEF21 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
