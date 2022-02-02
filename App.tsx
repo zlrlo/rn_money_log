@@ -13,7 +13,7 @@ import {FeatureGroupDetail} from './lib/feature-group-detail';
 
 const App = () => {
   return (
-    <View style={tw` pt-12 bg-gray-50 flex-1 items-center justify-center`}>
+    <View style={tw`pt-12 bg-gray-50`}>
       <FeatureGroupDetail />
     </View>
   );
