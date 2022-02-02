@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, View} from 'react-native';
 import tw from 'twrnc';
+import {GroupDetailCountBoxes} from './GroupDetailCountBoxes';
 import {GroupDetailHeader} from './GroupDetailHeader';
 import {GroupDetailProfile} from './GroupDetailProfile';
 
@@ -9,9 +10,8 @@ export const FeatureGroupDetail = () => {
     <View style={tw`px-4`}>
       <GroupDetailHeader />
       <GroupDetailProfile />
-      {/* count boxes */}
-      <View style={tw`border-2`}>
-        <Text>count boxes</Text>
+      <View style={tw`my-9`}>
+        <GroupDetailCountBoxes />
       </View>
       {/* image card slider */}
       <View style={tw`border-2`}>
