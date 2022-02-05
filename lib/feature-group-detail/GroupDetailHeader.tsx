@@ -5,9 +5,9 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 export const GroupDetailHeader = () => {
   return (
-    <View style={tw`border-2 ml-auto`}>
-      <View style={tw`w-12 flex items-center`}>
-        <Icon name="cog" size={30}></Icon>
+    <View style={tw`ml-auto`}>
+      <View style={tw`w-12 h-7 flex items-center justify-center`}>
+        <Icon name="cog" size={28}></Icon>
       </View>
     </View>
   );
