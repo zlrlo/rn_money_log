@@ -9,15 +9,17 @@ import {GroupDetailProfile} from './GroupDetailProfile';
 export const FeatureGroupDetail = () => {
   return (
     <View>
-      <View style={tw`px-4`}>
-        <GroupDetailHeader />
-      </View>
-      <ScrollView style={tw`px-4`}>
+      <ScrollView stickyHeaderIndices={[2]}>
+        <View style={tw`px-1`}>
+          <GroupDetailHeader />
+        </View>
         <GroupDetailProfile />
-        <View style={tw`my-9`}>
+        <View style={tw`my-9 bg-white`}>
           <GroupDetailCountBoxes />
         </View>
-        <GroupDetailImageCard />
+        <View style={tw`px-5`}>
+          <GroupDetailImageCard />
+        </View>
       </ScrollView>
     </View>
   );
