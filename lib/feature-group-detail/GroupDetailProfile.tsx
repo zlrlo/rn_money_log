@@ -4,17 +4,17 @@ import tw from 'twrnc';
 
 export const GroupDetailProfile = () => {
   return (
-    <View style={tw`border-2 items-center`}>
-      <View style={tw`border-2`}>
+    <View style={tw`items-center`}>
+      <View style={tw`rounded-full p-1 bg-black`}>
         <Image
           source={{
-            uri: 'https://i.picsum.photos/id/49/1280/792.jpg?hmac=NnUJy0O9-pXHLmY2loqVs2pJmgw9xzuixgYOk4ALCXU',
+            uri: 'https://i.picsum.photos/id/1062/5092/3395.jpg?hmac=o9m7qeU51uOLfXvepXcTrk2ZPiSBJEkiiOp-Qvxja-k',
           }}
-          style={tw`w-20 h-20 rounded-full`}
+          style={tw`w-24 h-24 rounded-full`}
         />
       </View>
 
-      <View style={tw`border-2 items-center mt-7`}>
+      <View style={tw`items-center mt-7`}>
         <Text style={tw`text-xl font-extrabold`}>그룹 이름 자리</Text>
 
         <View style={tw`mt-3`}>
